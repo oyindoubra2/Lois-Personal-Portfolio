@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#hamburger{
+  margin: 0px 24px;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+ /* positions the icon to the right and center aligns it vertically */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  /* display: none; */
+}
+
+
+a {
+  text-decoration: none;
+  padding: 0.7em 1em;
+  color: #323232;
+}
+#logo{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 300px) {
+  .menu{
+   display: none;
+   
+ }
+ #hamburger{
+  display: block;
+}
+ 
+ }   
+
+@media screen and (min-width: 1024px) {
+  .menu{
+    display: block;
+  }
+
+  #hamburger{
+    display: none;
+  }
+
+}

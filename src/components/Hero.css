@@ -1,0 +1,64 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Gadgets.jpg');
+    background-size: cover;
+    color: #ffffff;
+    padding: 0em 2em;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+
+  .btn{
+    border: 4px solid #303033;
+    width: 150px;
+    background: transparent;
+    margin: 0.5em 0;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0.5em 0.5em;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  
+  /* Tablet */
+@media screen and (min-width: 750px) {
+  .hero{
+    display: flex;
+    flex-direction: row;
+    padding: 0em 1.5em;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  
+  h1{
+    font-size: 30px;
+  }
+  
+  .hero{
+    flex-direction: row;
+    width: 100%;
+  }
+  .hero-text{
+    text-align: center;
+  }
+  p{
+    font-size: 24px;
+  }
+ 
+
+}
+
+
